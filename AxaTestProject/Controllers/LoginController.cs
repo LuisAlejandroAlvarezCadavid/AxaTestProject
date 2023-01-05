@@ -31,7 +31,7 @@ namespace AxaTestProject.Controllers
                 var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
                 var tokeOptions = new JwtSecurityToken(issuer: configuration.GetSection("JWT:ValidIssuer").Value, audience: configuration.GetSection("JWT:ValidAudience").Value,
                     claims: new List<Claim>() { new Claim(ClaimTypes.Name, user.User), new Claim(ClaimTypes.NameIdentifier, user.Password) },
-                    expires: DateTime.Now.AddHours(1),
+                    expires: DateTime.Now.AddMinutes(2),
                     signingCredentials: signinCredentials);
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
                 return Ok(new JWTTokenResponse

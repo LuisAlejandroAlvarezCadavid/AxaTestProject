@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AxaTestProject.Repositories\AxaTestProject.Repositories.csproj" />
     <ProjectReference Include="..\AxaTestProject.Shared\AxaTestProject.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
 
 </Project>

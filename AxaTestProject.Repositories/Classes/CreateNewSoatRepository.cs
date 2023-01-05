@@ -10,6 +10,8 @@ namespace AxaTestProject.Repositories.Classes
 {
     public class CreateNewSoatRepository : ICreateNewSoatRepository
     {
+
+
         public Task<bool> CreateNewSoatAsync(SoatDataModel soatDataModel)
         {
             return Task.Run(() => true);
