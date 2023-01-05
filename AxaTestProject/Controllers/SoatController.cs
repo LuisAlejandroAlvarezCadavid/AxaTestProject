@@ -1,4 +1,5 @@
-﻿using AxaTestProject.Services.Interfaces;
+﻿using AxaTestProject.Resources;
+using AxaTestProject.Services.Interfaces;
 using AxaTestProject.Shared.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -19,14 +20,21 @@ namespace AxaTestProject.Controllers
 
         [HttpPost]
         [Route("AddNewSoat")]
-        public async IAsyncEnumerable<(bool, HttpReturnDataModel)> AddNewSoat(SoatDataModel soatDataModel)
+        public async Task<ActionResult> AddNewSoat(SoatDataModel soatDataModel)
         {
-            (bool status, HttpReturnDataModel httpStatus) returnStatus = await __createNewSoartService.CreateNewSoatAsync(soatDataModel);
-            if(returnStatus.status)
+            try
             {
-                yield return returnStatus;
+                (bool status, HttpReturnDataModel httpStatus) returnStatus = await __createNewSoartService.CreateNewSoatAsync(soatDataModel);
+                if (returnStatus.status)
+                {
+                    return new JsonResult(returnStatus.httpStatus);
+                }
+                return new JsonResult(new HttpReturnDataModel { StatusCode = System.Net.HttpStatusCode.BadRequest, Message = HttpMessages.SoatDontCreate });
             }
-            yield return (false, new HttpReturnDataModel { StatusCode = System.Net.HttpStatusCode.NotFound, Message = "Bad Request" });
+            catch(Exception ex)
+            {
+                return new JsonResult(new HttpReturnDataModel { StatusCode = System.Net.HttpStatusCode.InternalServerError, Message = HttpMessages.SoatExeptionCreate }) ;
+            }
         }
     }
 }

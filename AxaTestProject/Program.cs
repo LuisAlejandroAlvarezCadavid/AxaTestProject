@@ -1,9 +1,15 @@
+using AxaTestProject.Repositories.Classes;
+using AxaTestProject.Repositories.Interfaces;
+using AxaTestProject.Services.Classes;
+using AxaTestProject.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddScoped<ICreateNewSoatService, CreateNewSoatService>();
+builder.Services.AddScoped<ICreateNewSoatRepository, CreateNewSoatRepository>();
 
 builder.Services.AddAuthentication(opt => {
     opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

@@ -1,0 +1,17 @@
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\bin\Debug\net6.0\AxaTestProject.Repositories.deps.json
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\bin\Debug\net6.0\AxaTestProject.Repositories.runtimeconfig.json
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\bin\Debug\net6.0\AxaTestProject.Repositories.dll
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\bin\Debug\net6.0\AxaTestProject.Repositories.pdb
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\bin\Debug\net6.0\AxaTestProject.Shared.dll
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\bin\Debug\net6.0\AxaTestProject.Shared.pdb
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\obj\Debug\net6.0\AxaTestProject.Repositories.csproj.AssemblyReference.cache
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\obj\Debug\net6.0\AxaTestProject.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\obj\Debug\net6.0\AxaTestProject.Repositories.AssemblyInfoInputs.cache
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\obj\Debug\net6.0\AxaTestProject.Repositories.AssemblyInfo.cs
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\obj\Debug\net6.0\AxaTestProject.Repositories.csproj.CoreCompileInputs.cache
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\obj\Debug\net6.0\AxaTestProject.Repositories.csproj.CopyComplete
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\obj\Debug\net6.0\AxaTestProject.Repositories.dll
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\obj\Debug\net6.0\refint\AxaTestProject.Repositories.dll
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\obj\Debug\net6.0\AxaTestProject.Repositories.pdb
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\obj\Debug\net6.0\AxaTestProject.Repositories.genruntimeconfig.cache
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\obj\Debug\net6.0\ref\AxaTestProject.Repositories.dll
