@@ -1,0 +1,12 @@
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Shared\bin\Debug\net6.0\AxaTestProject.Shared.deps.json
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Shared\bin\Debug\net6.0\AxaTestProject.Shared.dll
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Shared\bin\Debug\net6.0\AxaTestProject.Shared.pdb
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Shared\obj\Debug\net6.0\AxaTestProject.Shared.csproj.AssemblyReference.cache
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Shared\obj\Debug\net6.0\AxaTestProject.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Shared\obj\Debug\net6.0\AxaTestProject.Shared.AssemblyInfoInputs.cache
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Shared\obj\Debug\net6.0\AxaTestProject.Shared.AssemblyInfo.cs
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Shared\obj\Debug\net6.0\AxaTestProject.Shared.csproj.CoreCompileInputs.cache
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Shared\obj\Debug\net6.0\AxaTestProject.Shared.dll
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Shared\obj\Debug\net6.0\refint\AxaTestProject.Shared.dll
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Shared\obj\Debug\net6.0\AxaTestProject.Shared.pdb
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Shared\obj\Debug\net6.0\ref\AxaTestProject.Shared.dll

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AxaTestProject.Services/1.0.0": {
+        "dependencies": {
+          "AxaTestProject.Shared": "1.0.0"
+        },
+        "runtime": {
+          "AxaTestProject.Services.dll": {}
+        }
+      },
+      "AxaTestProject.Shared/1.0.0": {
+        "runtime": {
+          "AxaTestProject.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AxaTestProject.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AxaTestProject.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
