@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AxaTestProject.Repositories.Migrations
 {
     [DbContext(typeof(MyDBContext))]
-    [Migration("20230105195608_InitialMigration")]
+    [Migration("20230106041924_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -27,11 +27,11 @@ namespace AxaTestProject.Repositories.Migrations
 
             modelBuilder.Entity("AxaTestProject.Repositories.DataEntities.CityEntity", b =>
                 {
-                    b.Property<int?>("CityId")
+                    b.Property<int>("CityId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("CityId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CityId"));
 
                     b.Property<string>("CityName")
                         .IsRequired()
@@ -74,7 +74,7 @@ namespace AxaTestProject.Repositories.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Identification"));
 
-                    b.Property<string>("City")
+                    b.Property<string>("CityName")
                         .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");

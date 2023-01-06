@@ -4,6 +4,6 @@ namespace AxaTestProject.Repositories.Interfaces
 {
     public interface ICreateNewSoatRepository
     {
-        Task<bool> CreateNewSoatAsync(SoatDataModel soatDataModel);
+        Task<bool> CreateNewSoatAsync(SoatDataModel soatDataModel);       
     }
 }

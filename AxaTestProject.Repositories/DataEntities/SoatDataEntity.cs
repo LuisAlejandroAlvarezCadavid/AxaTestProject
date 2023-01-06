@@ -28,6 +28,7 @@ namespace AxaTestProject.Repositories.DataEntities
 
         [Required]
         [MaxLength(30)]
-        public string? City { get; set; }
+        public string? CityName { get; set; }      
+
     }
 }

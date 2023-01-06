@@ -11,10 +11,12 @@ namespace AxaTestProject.Repositories.DataEntities
     {
         [Required]
         [Key]
-        public int? CityId { get; set; }
+        public int CityId { get; set; }
 
         [Required]
         [MaxLength(80)]
         public string? CityName { get; set; }
+
+        List<SoatDataEntity> SoatData { get; set; }
     }
 }

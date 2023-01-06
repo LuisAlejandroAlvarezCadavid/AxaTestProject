@@ -1,15 +1,16 @@
 using AxaTestProject.Repositories.Classes;
+using AxaTestProject.Repositories.DBContext;
 using AxaTestProject.Repositories.Interfaces;
 using AxaTestProject.Services.Classes;
 using AxaTestProject.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddScoped<ICreateNewSoatService, CreateNewSoatService>();
-builder.Services.AddScoped<ICreateNewSoatRepository, CreateNewSoatRepository>();
+ConfigServices(builder);
 
 builder.Services.AddAuthentication(opt => {
     opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -56,3 +57,18 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+
+
+
+
+void ConfigServices(WebApplicationBuilder builder)
+{
+    builder.Services.AddScoped<ICreateNewSoatService, CreateNewSoatService>();
+    builder.Services.AddScoped<ICreateNewSoatRepository, CreateNewSoatRepository>();
+    builder.Services.AddScoped<IPasswordHasher<IdentityUser>, CreateHashPasswordService<IdentityUser>>();
+    builder.Services.AddScoped<ILoginService, LoginService>();
+    builder.Services.AddScoped<ILoginRepository, LoginRepository>();
+    builder.Services.AddScoped<ICitiesRepository, CitiesRepository>();
+    builder.Services.AddDbContext<MyDBContext>();
+}

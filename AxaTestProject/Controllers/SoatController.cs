@@ -11,11 +11,11 @@ namespace AxaTestProject.Controllers
     [Authorize]
     public class SoatController : Controller
     {
-        ICreateNewSoatService __createNewSoartService { get; set; }  
+        ICreateNewSoatService CreateNewSoartService { get; set; }  
 
         public SoatController(ICreateNewSoatService createNewSoatService)
         {
-            __createNewSoartService= createNewSoatService;
+            CreateNewSoartService= createNewSoatService;
         }
 
         [HttpPost]
@@ -24,7 +24,7 @@ namespace AxaTestProject.Controllers
         {
             try
             {
-                (bool status, HttpReturnDataModel httpStatus) returnStatus = await __createNewSoartService.CreateNewSoatAsync(soatDataModel);
+                (bool status, HttpReturnDataModel httpStatus) returnStatus = await CreateNewSoartService.CreateNewSoatAsync(soatDataModel);
                 if (returnStatus.status)
                 {
                     return new JsonResult(returnStatus.httpStatus);

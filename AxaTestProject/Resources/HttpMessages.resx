@@ -123,4 +123,7 @@
   <data name="SoatExeptionCreate" xml:space="preserve">
     <value>Se presento una exepcion al crear el Soat</value>
   </data>
+  <data name="UserDontExist" xml:space="preserve">
+    <value>El usuario no existe</value>
+  </data>
 </root>

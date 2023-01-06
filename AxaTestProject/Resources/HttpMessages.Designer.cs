@@ -77,5 +77,14 @@ namespace AxaTestProject.Resources {
                 return ResourceManager.GetString("SoatExeptionCreate", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El usuario no existe.
+        /// </summary>
+        internal static string UserDontExist {
+            get {
+                return ResourceManager.GetString("UserDontExist", resourceCulture);
+            }
+        }
     }
 }
