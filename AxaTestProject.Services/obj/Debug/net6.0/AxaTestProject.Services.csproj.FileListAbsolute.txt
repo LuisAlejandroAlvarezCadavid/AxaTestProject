@@ -6,6 +6,8 @@ D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Services\bin\Debug\net6.
 D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Services\bin\Debug\net6.0\AxaTestProject.Repositories.pdb
 D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Services\bin\Debug\net6.0\AxaTestProject.Shared.pdb
 D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Services\obj\Debug\net6.0\AxaTestProject.Services.csproj.AssemblyReference.cache
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Services\obj\Debug\net6.0\AxaTestProject.Services.ServicesMessages.resources
+D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Services\obj\Debug\net6.0\AxaTestProject.Services.csproj.GenerateResource.cache
 D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Services\obj\Debug\net6.0\AxaTestProject.Services.GeneratedMSBuildEditorConfig.editorconfig
 D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Services\obj\Debug\net6.0\AxaTestProject.Services.AssemblyInfoInputs.cache
 D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Services\obj\Debug\net6.0\AxaTestProject.Services.AssemblyInfo.cs

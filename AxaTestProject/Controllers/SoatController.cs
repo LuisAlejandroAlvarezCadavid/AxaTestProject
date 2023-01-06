@@ -29,11 +29,31 @@ namespace AxaTestProject.Controllers
                 {
                     return new JsonResult(returnStatus.httpStatus);
                 }
-                return new JsonResult(new HttpReturnDataModel { StatusCode = System.Net.HttpStatusCode.BadRequest, Message = HttpMessages.SoatDontCreate });
+                return new JsonResult(new HttpReturnDataModel { StatusCode = System.Net.HttpStatusCode.BadRequest, Message = returnStatus.httpStatus.Message });
             }
             catch(Exception ex)
             {
-                return new JsonResult(new HttpReturnDataModel { StatusCode = System.Net.HttpStatusCode.InternalServerError, Message = HttpMessages.SoatExeptionCreate }) ;
+                return new JsonResult(new HttpReturnDataModel { StatusCode = System.Net.HttpStatusCode.InternalServerError, Message = ex.Message }) ;
+            }
+        }
+
+        [HttpGet]
+        [Route("GetSoatByPlate/{plate}")]
+        public async Task<ActionResult> GetSoatByPlate(string plate)
+        {
+            try
+            {
+                (bool status, SoatDataModel? soatDataModel)soat = await CreateNewSoartService.GetSoatByPlateAsync(plate);
+                if(soat.status && soat.soatDataModel != null)
+                {
+                    return Json(soat.soatDataModel);
+                }
+                else 
+                    return new JsonResult(new HttpReturnDataModel { StatusCode = System.Net.HttpStatusCode.BadRequest, Message = HttpMessages.SoatCantRead });
+            }
+            catch (Exception ex) 
+            {
+                return new JsonResult(new HttpReturnDataModel { StatusCode = System.Net.HttpStatusCode.BadRequest, Message = HttpMessages.SoatCantRead });
             }
         }
     }

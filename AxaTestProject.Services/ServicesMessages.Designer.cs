@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AxaTestProject.Resources {
+namespace AxaTestProject.Services {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace AxaTestProject.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class HttpMessages {
+    internal class ServicesMessages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal HttpMessages() {
+        internal ServicesMessages() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace AxaTestProject.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AxaTestProject.Resources.HttpMessages", typeof(HttpMessages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AxaTestProject.Services.ServicesMessages", typeof(ServicesMessages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,38 +61,47 @@ namespace AxaTestProject.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a No se puedo encontrar el leer el Soat asociado a esa placa.
+        ///   Busca una cadena traducida similar a Fallo la creacion del soat.
         /// </summary>
-        internal static string SoatCantRead {
+        internal static string CreateSoatHasFailed {
             get {
-                return ResourceManager.GetString("SoatCantRead", resourceCulture);
+                return ResourceManager.GetString("CreateSoatHasFailed", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a No se puedo Crear el Soat.
+        ///   Busca una cadena traducida similar a Se creo el soat exitosamente.
         /// </summary>
-        internal static string SoatDontCreate {
+        internal static string CreateSoatSuccessful {
             get {
-                return ResourceManager.GetString("SoatDontCreate", resourceCulture);
+                return ResourceManager.GetString("CreateSoatSuccessful", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Se presento una exepcion al crear el Soat.
+        ///   Busca una cadena traducida similar a La ciudad seleccionada no existe.
         /// </summary>
-        internal static string SoatExeptionCreate {
+        internal static string DontExistTheCity {
             get {
-                return ResourceManager.GetString("SoatExeptionCreate", resourceCulture);
+                return ResourceManager.GetString("DontExistTheCity", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a El usuario no existe.
+        ///   Busca una cadena traducida similar a La fecha de vencimiento llego a su terminacion.
         /// </summary>
-        internal static string UserDontExist {
+        internal static string EndDateIsVeryLate {
             get {
-                return ResourceManager.GetString("UserDontExist", resourceCulture);
+                return ResourceManager.GetString("EndDateIsVeryLate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Falta mas informacion para el soat.
+        /// </summary>
+        internal static string NeedMoreSoatInformation {
+            get {
+                return ResourceManager.GetString("NeedMoreSoatInformation", resourceCulture);
             }
         }
     }

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AxaTestProject.Repositories.DataEntities
 {
@@ -6,6 +7,7 @@ namespace AxaTestProject.Repositories.DataEntities
     {
         [Key]
         [Required]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Identification { get; set; }
 
         [Required]

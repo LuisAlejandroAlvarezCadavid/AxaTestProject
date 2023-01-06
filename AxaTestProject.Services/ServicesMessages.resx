@@ -117,16 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="SoatCantRead" xml:space="preserve">
-    <value>No se puedo encontrar el leer el Soat asociado a esa placa</value>
+  <data name="CreateSoatHasFailed" xml:space="preserve">
+    <value>Fallo la creacion del soat</value>
   </data>
-  <data name="SoatDontCreate" xml:space="preserve">
-    <value>No se puedo Crear el Soat</value>
+  <data name="CreateSoatSuccessful" xml:space="preserve">
+    <value>Se creo el soat exitosamente</value>
   </data>
-  <data name="SoatExeptionCreate" xml:space="preserve">
-    <value>Se presento una exepcion al crear el Soat</value>
+  <data name="DontExistTheCity" xml:space="preserve">
+    <value>La ciudad seleccionada no existe</value>
   </data>
-  <data name="UserDontExist" xml:space="preserve">
-    <value>El usuario no existe</value>
+  <data name="EndDateIsVeryLate" xml:space="preserve">
+    <value>La fecha de vencimiento llego a su terminacion</value>
+  </data>
+  <data name="NeedMoreSoatInformation" xml:space="preserve">
+    <value>Falta mas informacion para el soat</value>
   </data>
 </root>
