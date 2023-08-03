@@ -10,6 +10,7 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 ConfigServices(builder);
 
 builder.Services.AddAuthentication(opt => {
@@ -57,10 +58,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-
-
-
-
 
 void ConfigServices(WebApplicationBuilder builder)
 {
