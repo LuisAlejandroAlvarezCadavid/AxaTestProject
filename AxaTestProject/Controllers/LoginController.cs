@@ -1,12 +1,7 @@
 ﻿using AxaTestProject.Repositories.DataEntities;
-using AxaTestProject.Repositories.DBContext;
-using AxaTestProject.Repositories.Interfaces;
 using AxaTestProject.Resources;
-using AxaTestProject.Services.Classes;
 using AxaTestProject.Services.Interfaces;
 using AxaTestProject.Shared.Models.Login;
-using Azure.Core;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -17,7 +12,7 @@ using System.Text;
 namespace AxaTestProject.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]   
+    [Route("api/[controller]")]
     public class LoginController : Controller
     {
 
@@ -25,7 +20,7 @@ namespace AxaTestProject.Controllers
         public IPasswordHasher<IdentityUser> CreateHashPassword { get; set; }
         public ILoginService LoginService { get; set; }
 
-       
+
 
         public LoginController(IConfiguration configuration, IPasswordHasher<IdentityUser> createHashPassword, ILoginService loginService)
         {
@@ -39,15 +34,15 @@ namespace AxaTestProject.Controllers
         [Route("LoginUser")]
         public async Task<ActionResult> LoginUser(LoginModel user)
         {
-            LoginUserEntity loginUserEntity = await LoginService.GetUserLoginPassWordAsync(user.User);
+            LoginUserEntity loginUserEntity = await LoginService.GetUserLoginPassWordAsync(user.User!);
             IdentityUser _user = new IdentityUser();
-            PasswordVerificationResult passResult = CreateHashPassword.VerifyHashedPassword(_user, loginUserEntity?.Password, user.Password);
+            PasswordVerificationResult passResult = CreateHashPassword.VerifyHashedPassword(_user, loginUserEntity?.Password!, user.Password!);
             if (passResult == PasswordVerificationResult.Success)
             {
-                var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration.GetSection("JWT:Secret").Value));
+                var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration.GetSection("JWT:Secret").Value!));
                 var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
                 var tokeOptions = new JwtSecurityToken(issuer: configuration.GetSection("JWT:ValidIssuer").Value, audience: configuration.GetSection("JWT:ValidAudience").Value,
-                    claims: new List<Claim>() { new Claim(ClaimTypes.Name, user.User), new Claim(ClaimTypes.NameIdentifier, user.Password) },
+                    claims: new List<Claim>() { new Claim(ClaimTypes.Name, user.User!), new Claim(ClaimTypes.NameIdentifier, user.Password!) },
                     expires: DateTime.Now.AddMinutes(60),
                     signingCredentials: signinCredentials);
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
@@ -59,7 +54,7 @@ namespace AxaTestProject.Controllers
             else
             {
                 return BadRequest(HttpMessages.UserDontExist);
-            }            
+            }
         }
     }
 }

@@ -1,15 +1,10 @@
 ﻿using AxaTestProject.Repositories.DataEntities;
 using AxaTestProject.Repositories.Interfaces;
 using AxaTestProject.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AxaTestProject.Services.Classes
 {
-    public class LoginService: ILoginService
+    public class LoginService : ILoginService
     {
         ILoginRepository LoginRepository { get; set; }
 
@@ -21,7 +16,7 @@ namespace AxaTestProject.Services.Classes
         public async Task<bool> GetUserLoginAsync(string username)
         {
             LoginUserEntity loginUserEntity = await LoginRepository.GetUserLoginAsync(username);
-            return loginUserEntity == null ? false :  true;
+            return loginUserEntity == null;
         }
 
         public async Task<LoginUserEntity> GetUserLoginPassWordAsync(string username)
