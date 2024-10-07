@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AxaTestProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eed951a5dfaea1e29c550daa670141868d5a7749")]
 [assembly: System.Reflection.AssemblyProductAttribute("AxaTestProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AxaTestProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject\\AxaTestProject.csproj": {}
+    "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject\\AxaTestProject.csproj": {}
   },
   "projects": {
-    "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj": {
+    "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj",
+        "projectUniqueName": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj",
         "projectName": "AxaTestProject.Repositories",
-        "projectPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj",
+        "projectPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj",
         "packagesPath": "C:\\Users\\alejo\\.nuget\\packages\\",
-        "outputPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Repositories\\obj\\",
+        "outputPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,11 +30,11 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj": {
-                "projectPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj"
+              "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj": {
+                "projectPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj"
               }
             }
           }
@@ -43,31 +43,48 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.12.1, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[8.0.8, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             }
           },
           "imports": [
@@ -86,18 +103,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Services\\AxaTestProject.Services.csproj": {
+    "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Services\\AxaTestProject.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Services\\AxaTestProject.Services.csproj",
+        "projectUniqueName": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Services\\AxaTestProject.Services.csproj",
         "projectName": "AxaTestProject.Services",
-        "projectPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Services\\AxaTestProject.Services.csproj",
+        "projectPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Services\\AxaTestProject.Services.csproj",
         "packagesPath": "C:\\Users\\alejo\\.nuget\\packages\\",
-        "outputPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Services\\obj\\",
+        "outputPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -108,7 +125,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -116,14 +133,14 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj": {
-                "projectPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj"
+              "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj": {
+                "projectPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj"
               },
-              "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj": {
-                "projectPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj"
+              "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj": {
+                "projectPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj"
               }
             }
           }
@@ -132,23 +149,28 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNet.Identity.Core": {
               "target": "Package",
-              "version": "[2.2.3, )"
+              "version": "[2.2.4, )"
             },
             "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.Extensions.Identity.Core": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[8.0.8, )"
             }
           },
           "imports": [
@@ -167,18 +189,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj": {
+    "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj",
+        "projectUniqueName": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj",
         "projectName": "AxaTestProject.Shared",
-        "projectPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj",
+        "projectPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj",
         "packagesPath": "C:\\Users\\alejo\\.nuget\\packages\\",
-        "outputPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\obj\\",
+        "outputPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -189,7 +211,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -197,8 +219,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -206,11 +228,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -227,18 +254,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject\\AxaTestProject.csproj": {
+    "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject\\AxaTestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject\\AxaTestProject.csproj",
+        "projectUniqueName": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject\\AxaTestProject.csproj",
         "projectName": "AxaTestProject",
-        "projectPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject\\AxaTestProject.csproj",
+        "projectPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject\\AxaTestProject.csproj",
         "packagesPath": "C:\\Users\\alejo\\.nuget\\packages\\",
-        "outputPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject\\obj\\",
+        "outputPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -249,7 +276,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -257,17 +284,17 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj": {
-                "projectPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj"
+              "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj": {
+                "projectPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Repositories\\AxaTestProject.Repositories.csproj"
               },
-              "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Services\\AxaTestProject.Services.csproj": {
-                "projectPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Services\\AxaTestProject.Services.csproj"
+              "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Services\\AxaTestProject.Services.csproj": {
+                "projectPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Services\\AxaTestProject.Services.csproj"
               },
-              "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj": {
-                "projectPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj"
+              "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj": {
+                "projectPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj"
               }
             }
           }
@@ -276,15 +303,28 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[6.0.12, )"
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.1, )"
             }
           },
           "imports": [
@@ -306,7 +346,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

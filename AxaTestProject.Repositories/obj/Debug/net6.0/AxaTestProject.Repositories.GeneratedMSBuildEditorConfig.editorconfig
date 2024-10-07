@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AxaTestProject.Repositories
-build_property.ProjectDir = D:\Programas_Para_Pruebas\AxaTestProject\AxaTestProject.Repositories\
+build_property.ProjectDir = D:\Proyectos\Back\AxaTestProject\AxaTestProject.Repositories\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

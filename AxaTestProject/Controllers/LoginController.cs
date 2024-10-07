@@ -20,6 +20,7 @@ namespace AxaTestProject.Controllers
         public IPasswordHasher<IdentityUser> CreateHashPassword { get; set; }
         public ILoginService LoginService { get; set; }
 
+        
 
 
         public LoginController(IConfiguration configuration, IPasswordHasher<IdentityUser> createHashPassword, ILoginService loginService)

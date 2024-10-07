@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sEtEfvMXSClpow59R8WaJ5CMVRQMrW4BDANDipqh2pH6FMLcyak5x9B3+3qRG13gHk4u4N+tDWCKcQI4kBkbsw==",
+  "dgSpecHash": "2y40RNq6trE=",
   "success": true,
-  "projectFilePath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj",
+  "projectFilePath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -6,9 +6,5 @@ using System.Threading.Tasks;
 
 namespace AxaTestProject.Shared.Models.Login
 {
-    public class LoginModel
-    {
-        public string? User { get; set; }
-        public string? Password { get; set; }
-    }
+    public record LoginModel(string? User, string? Password);
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj": {}
+    "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj": {}
   },
   "projects": {
-    "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj": {
+    "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj",
+        "projectUniqueName": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj",
         "projectName": "AxaTestProject.Shared",
-        "projectPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj",
+        "projectPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\AxaTestProject.Shared.csproj",
         "packagesPath": "C:\\Users\\alejo\\.nuget\\packages\\",
-        "outputPath": "D:\\Programas_Para_Pruebas\\AxaTestProject\\AxaTestProject.Shared\\obj\\",
+        "outputPath": "D:\\Proyectos\\Back\\AxaTestProject\\AxaTestProject.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,8 +30,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -39,11 +39,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -60,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
