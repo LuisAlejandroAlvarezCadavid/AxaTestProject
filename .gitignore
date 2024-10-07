@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+AxaTestProject/.vs/AxaTestProject/DesignTimeBuild/.dtbcache.v2
+AxaTestProject/.vs/AxaTestProject/v17/.suo
